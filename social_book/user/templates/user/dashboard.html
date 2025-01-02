@@ -1,0 +1,11 @@
+{% extends "user/base.html" %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<p>Welcome to your dashboard, {{ user.username }}!</p>
+<ul>
+    <li><a href="{% url 'upload_books' %}">Upload Books</a></li>
+    <li><a href="{% url 'my_books' %}">My Books</a></li>
+    <li><a href="{% url 'authors_and_sellers' %}">Authors and Sellers</a></li>
+</ul>
+{% endblock %}

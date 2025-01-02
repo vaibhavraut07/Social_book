@@ -1,0 +1,10 @@
+{% extends "user/base.html" %}
+
+{% block content %}
+<h2>My Books</h2>
+<ul>
+    {% for file in uploaded_files %}
+        <li>{{ file.title }} - {{ file.year_published }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
